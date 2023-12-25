@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UI kit приложения POWER CROWD</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="uikitstyle.css">
+  </head>
+  <body>
+<h1>UI kit приложения POWER CROWD </h1>
+<div class="content">
+
+<!--ЦВЕТА БОКСОВ -->
+<section>
+    <div>
+      <p>Цвета</p>
+      <div id="colors">
+          <p class="regular"> Основные цвета </p>
+          <div class="colors_violet"></div>
+          <div class="colors_yellow"></div>
+          <div class="clear"></div>
+          <p class="regular"> Вспомогательные цвета </p>
+          <div class="colors_white"></div>
+          <div class="colors_black"></div>
+          <div class="colors_787878"></div>
+          <div class="clear"></div>
+          <p class="regular"> Фон </p>
+          <div class="fon1"> <img src="img/фон.jpg" class="fon1"></div>
+          <div class="fon1"> <img src="img/градиент.jpg" class="fon1"></div>
+      </div>
+    </div>
+</section>
+
+<!--КНОПКИ, ПЛАШКА-->
+<section>
+  <p> Кнопочки, карточки</p>
+  <!--БОЛЬШИЕ-->
+   <div class="buttonset">
+      <h2>Кнопочки</h2>
+         <p class="regular"> Большие кнопки</p>
+         <p class="small_regular">используются для призыва к главным действиям</p>
+           <button class="button_big button_violet"> Button </button>
+           <button class="button_big button_white"> Button </button>
+           <button class="button_big button_gray"> Button </button>
+      <!--СРЕДНИЕ-->
+         <p class="regular"> Средние кнопки</p>
+         <p class="small_regular"> используются для внутренней работы и для войти на главном экране </p>
+             <button class="button_medium button_violet"> Button </button>
+             <button class="button_medium button_white"> Button </button>
+             <button class="button_medium button_gray"> Button </button>
+      <!--МАЛЕНЬКИЕ-->
+          <p class="regular"> Маленькие кнопочки</p>
+          <p class="small_regular"> используются в основном на карточках </p>
+              <button class="button_small button_violet"> Button </button>
+              <button class="button_small button_white"> Button </button>
+              <button class="button_small button_gray"> Button </button>
+          <br>
+              <button class="button_small_small button_violet"> Button </button>
+              <button class="button_small_small button_white"> Button </button>
+              <button class="button_small_small button_gray"> Button </button>
+         </div>
+  </section>
+
+<!--КАРТОЧКИ-->
+  <section>
+    <h2>Карточки</h2>
+    <div class="card_set">
+    <!--КАРТОЧКА СЛЕВА БОЛЬШАЯ-->
+      <div class="flex">  <!--применила для того, чтобы карточки встали в ряд, в CSS добавила классу margin для разделения блоков-->
+      <p class="regular"> Большие карточки</p>
+      <p class="small_regular"> используются для карточек проектов  <br> на главном экране </p>
+      <a href="#">
+        <div class="main_card">
+          <div id=main_card_tap>
+             <span id="text_card1">"Эвакуационная люлька <br> для выноса детей-младенцев <br>из зоны пожара “КовЧег”"</span>
+              <span id="text_card2"> 10% </span>
+               <span id="text_card3">собрано</span>
+               <span id="text_card4">из 570 000р.</span>
+               <img src="img/стрелка.png" id="strelka">
+               <img src="img/10%.png" id="ten">
+           </div>
+        </div>
+        </a>
+      </div>
+
+    <!--КАРТОЧКА СЛЕВА МАЛЕНЬКАЯ-->
+      <div>
+        <p class="regular"> Горизонтальные карточки</p>
+        <p class="small_regular"> используются для карточек проектов  <br> в разделе "проекты" </p>
+          <a href="#">
+            <div class="card_project">
+                 <span id="text1_project">Эвакуационная люлька <br> для выноса детей-младенцев <br>из зоны пожара “КовЧег”</span>
+                 <img src="img/лайк.png" id="like_card">
+                 <img src="img/фотолюлькамал.png" id="foto_card">
+            </div>
+          </a>
+          <a href="#">
+            <div class="card_project">
+                 <span id="text1_project">Эвакуационная люлька <br> для выноса детей-младенцев <br>из зоны пожара “КовЧег”</span>
+                 <img src="img/лайкполн.png" id="like_card">
+                 <img src="img/фотолюлькамал.png" id="foto_card">
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+
+
+
+</section>
+
+<!--ВВОД/INPUT-->
+<section>
+    <p> Вводим информацию</p>
+        <form class="information" action="index.html" method="post">
+
+          <div class="field">
+            <label for="search"> Поиск </label>
+            <input type="search" placeholder="Поиск" id="search">
+          </div>
+
+          <div class="field">
+            <label for="email"> Введите Email или телефон </label>
+            <input type="email" placeholder="Email, телефон " id="email">
+          </div>
+
+          <div class="field">
+            <label for="password"> Введите Пароль </label>
+            <input type="password" placeholder="Пароль" id="password">
+          </div>
+
+          <div class="field">
+            <label for="text"> Введите информацию о себе, проекте </label>
+            <input type="text" placeholder="Введите текст" id="text">
+          </div>
+
+          <div class="field">
+            <label for="text_big"> Для большого описания </label>
+            <<textarea class="text_big" id="text_big" rows="8" cols="80" placeholder="Введите текст"></textarea>
+          </div>
+        </form>
+  </section>
+
+  <!--ТАПБАР-->
+<section>
+<p> Навбарчик экей NavBar</p>
+  <div class="nav_bar">
+    <a href="#">
+      <img src="img/домглавный.png" id="home_nav_bar">
+    </a>
+    <a href="#">
+      <img src="img/проекты.png" id="project_nav_bar">
+    </a>
+    <a href="#">
+      <img src="img/аналитика.png" id="analytice_nav_bar">
+    </a>
+    <a href="#">
+      <img src="img/лайк.png" id="like_nav_bar">
+    </a>
+    <a href="#">
+      <img src="img/профиль.png" id="profile_nav_bar">
+    </a>
+    <a href="#">
+      <img src="img/борд.png" id="bord_nav_bar">
+    </a>
+  </div>
+</section>
+  <!--ШРИФТ-->
+<section>
+  <p> Шрифтики </p>
+  <div class="typography">
+  <h2> Используемый шрифт "Montserrat" </h2>
+    <h2 id="regular_h2"> Regular </h2>
+       <p id="typography_regular"> используется в описаниях внутри карточек в размере 15-16px </p>
+      <h2 id="medium_h2"> Medium </h2>
+         <p id="typography_medium"> используется в описание проекта на карточках, в название раздела <br> в размерах 12px, 17px,26px </p>
+        <h2 id="semi_bold_h2"> Semi Bold </h2>
+          <p id="typography_semi_bold"> Используется в названиях кнопок в размерах 16px и 12px </p>
+            <h2 id="black_h2"> Black </h2>
+               <p id="typography_black"> используется в название проекта,вознаграждения, <br> в имени пользователя, в размерсах 10px и 18px </p>
+
+
+
+  </div>
+</section>
+
+</div>
+  </body>
+</html>
